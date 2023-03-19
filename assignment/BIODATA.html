@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BIODATA FORM </title>
+        <link rel="stylesheet" href="biodata.css">
+        
+    </head>
+
+
+    <body>
+        <div id="error"></div>
+        <h1>BIODATA FORM</h1>
+        <form id="form">
+            <fieldset>
+                <legend>BIODATA </legend>
+                
+                <div class="NAME" id="FIRST NAME">
+                <label for="NAME"><b>FIRST NAME</b></label>
+                <input type="text" name="NAME" id="FIRST NAME" placeholder="First name" required> 
+                
+                               
+                    <label for="name"><b>LAST NAME</b></label>
+                    <input type="text" name="LAST NAME" id="LAST NAME" placeholder="Last Name" required> 
+                </div>
+                <br>
+
+
+                <div>
+                <label for="email"><b>E-mail Address</b> </label> <br>
+                <input required type="email" name="E-mail Address" id="email" required> <br><br>
+                <label for="number"><b>PHONE NUMBER</b></label> <br>
+                <input type="text" name="PHONE NUMBER" id="number"> <br><br>
+                </div>
+               
+                <div>
+                    <label for="MALE"></label> <i>MALE</i>  </label>
+                    <input type="radio" name="SEX" id="MALE" value="MALE" >
+                    <label for="FEMALE"><i> FEMALE <i></i></label>
+                    <input type="radio" name="SEX" id="FEMALE" value="FEMALE">
+                </div>
+
+                <br> <br>
+                <label for="password">PASSWORD</label>
+                <input type="password" name="password" id="password">
+                <label for=""></label>
+                <br><br>
+
+
+                
+            </fieldset>
+        </form>
+                         
+        </form>
+        <br><br>
+        <button type="submit" class="btn" onclick="openPopup()">SUBMIT</button> 
+                <div class="popup" id="popup">
+                    <h2>SUCCESS</h2>
+                    <P>Your details has been successfully submitted</P>
+                    <button type="button" onclick="closePopup()">OK</button>
+                </div>
+        
+        <script>
+            let popup = document.getElementById("popup");
+    
+            function openPopup(){
+             popup.classList.add("open-popup")   
+            }
+            function closePopup(){
+             popup.classList.remove("open-popup")   
+            }
+    
+        </script>
+
+    </body>  
+</html>
